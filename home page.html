@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <style>
+            .title {
+                font-size: 100px;
+                padding-top: 10px;
+
+            }
+        </style>
+        <style>
+            .carousel-indicators [data-bs-target] {
+                background-color: rgb(0, 0, 0);
+
+            }
+
+            .carousel-indicators .active {
+                background-color: rgb(255, 255, 255);
+
+            }
+
+
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                background-color: rgba(89, 89, 89, 0.622);
+
+                border-radius: 50%;
+
+                width: 40px;
+                height: 40px;
+            }
+
+
+            .carousel-control-prev-icon:hover,
+            .carousel-control-next-icon:hover {
+                background-color: rgb(0, 0, 0);
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--Row 1 - Logo, companyname, icons, welcome, logout,Menubar,Search-->
+        <div class="row" style="background-color: rgb(0, 0, 0);">
+            <div class="col-1">
+                <img src="gym logo.avif" style="width: 100%;" alt="">
+            </div>
+            <div class="col-4">
+                <span style="background-color: black;"></span>
+                <span class="title"
+                    style="color: rgb(212, 8, 8);font-size: 35px;font-family: 'Times New Roman', Times, serif;background-color: black;">GYM
+                    FIT
+
+                </span>
+
+            </div>
+
+            <div class="col-2">
+
+                <a href="https://www.youtube.com/watch?v=XRQeO7TvVys"><i class="bi bi-yin-yang"
+                        style="font-size: large;"></i>For more
+                    catogary</a>
+            </div>
+
+            <div class="col-3">Welcome to gym</div>
+            <div class="col-2"><a href="https://www.google.com/?zx=1763128728224&no_sw_cr=1"
+                    style="color: rgb(255, 196, 0);font-size: 25px;text-decoration: none;"> Logout<i
+                        class="bi bi-box-arrow-right"></i></a></div>
+        </div>
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(89, 87, 87);">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="color: aliceblue;">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" style="color: aliceblue;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: aliceblue;">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="color: aliceblue;">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true" style="color: aliceblue;">Help</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search catogary"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit" style="color: aliceblue;">Search<i
+                                class="bi bi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="row">
+        <div class="col-12">
+        <marquee behavior="" direction="" style="color: brown;">Welcome to bodybuilding</marquee>
+        </div>
+        <div class="col-6"></div>
+
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators" data-bs-ride="carousel">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"></button>
+
+
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="arnold.webp" class="d-block w-100" style="width: 80%;height: 80%;" alt="">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="mike.jpg" class="d-block w-100" style="width: 100%;height: 100%;" alt="">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="ramon.webp" class="d-block w-100" style="width: 100%;height: 100%;" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="sam sulek.jpg" class="d-block w-100" style="width: 100%;height: 100%;" alt="">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="chris 1.jpg" class="d-block w-100" style="width: 100%;height: 100%;" alt="">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="ronnie.jpg" class="d-block w-100" style="width: 100%;height: 100%;" alt="">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="cbum-praga-pro-open-e1732033617756.webp" class="d-block w-100"
+                        style="width: 100%;height: 100%;" alt="">
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div style="display: flex;">
+            <div class="card" style="width: 18rem;">
+                <img src="arnold.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The Arnold</h5>
+                    <p class="card-text">live in consistency.</p>
+                    <a href="#" class="btn btn-primary">click</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="arnold.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The Arnold</h5>
+                    <p class="card-text">live in consistency.</p>
+                    <a href="#" class="btn btn-primary">click</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="arnold.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The Arnold</h5>
+                    <p class="card-text">live in consistency.</p>
+                    <a href="#" class="btn btn-primary">click</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="arnold.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The Arnold</h5>
+                    <p class="card-text">live in consistency.</p>
+                    <a href="#" class="btn btn-primary">click</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="arnold.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The Arnold</h5>
+                    <p class="card-text">live in consistency.</p>
+                    <a href="#" class="btn btn-primary">click</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="arnold.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The Arnold</h5>
+                    <p class="card-text">live in consistency.</p>
+                    <a href="#" class="btn btn-primary">click</a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>
